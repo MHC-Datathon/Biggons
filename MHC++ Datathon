@@ -4,41 +4,41 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("C:\\Users\\micha\\Downloads\\MTA_Bus_Automated_Camera_Enforcement_Violations__Beginning_October_2019_20250919.csv")
  
 
-# 2. Convert 'First Occurrence' to datetime safely
+
 df["First Occurrence"] = pd.to_datetime(df["First Occurrence"], errors="coerce")
 
-# 3. Check how many rows could not be parsed (optional)
+
 print("Rows not parsed:", df["First Occurrence"].isna().sum())
 
-# 4. Confirm earliest and latest dates
+
 print("Earliest date:", df["First Occurrence"].min())
 print("Latest date:", df["First Occurrence"].max())
 
-# 5. Define congestion pricing start date
+
 congestion_start = pd.Timestamp("2025-01-05")
 
-# 6. Add a 'Period' column: Before or After congestion pricing
+
 df["Period"] = df["First Occurrence"].apply(
     lambda x: "After" if x >= congestion_start else "Before"
 )
 
-# 7. Filter only rows AFTER congestion pricing
+
 after_df = df[df["Period"] == "After"]
 
-# 8. Preview the first 10 rows
+
 print("Rows after Jan 5, 2025:", after_df.shape[0])
 print(after_df.head(10))
 
-# 9. Save the filtered dataset to a new CSV (In appdata)
+
 after_df.to_csv("violations_after_jan5_2025.csv", index=False)
 print("Filtered dataset saved as 'violations_after_jan5_2025.csv'")
 
-# Save the dataset BEFORE Jan 5, 2025 to a new CSV
+
 before_df = df[df["Period"] == "Before"]
 before_df.to_csv("violations_before_jan5_2025.csv", index=False)
 print("Filtered dataset saved as 'violations_before_jan5_2025.csv'")
 
-# 10. Plot number of violations per month after Jan 5, 2025
+
 if not after_df.empty:
     # Group by year and month
     after_df['YearMonth'] = after_df['First Occurrence'].dt.to_period('M')
@@ -55,7 +55,6 @@ if not after_df.empty:
 else:
     print("No violations found after Jan 5, 2025 to plot.")
 
-# Plot number of violations per month before Jan 5, 2025
 if not before_df.empty:
     before_df['YearMonth'] = before_df['First Occurrence'].dt.to_period('M')
     monthly_counts_before = before_df.groupby('YearMonth').size()
@@ -69,3 +68,4 @@ if not before_df.empty:
     plt.show()
 else:
     print("No violations found before Jan 5, 2025 to plot.")
+
