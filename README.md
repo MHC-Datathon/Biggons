@@ -3,7 +3,8 @@
 # 📊 Violation Trends Analysis — Datathon Project
 
 This repository was developed for the **MHC++ Datathon**, focusing on analyzing violation trends **before and after January 5, 2025**. Our objective was to investigate temporal patterns, identify significant shifts in violation frequency, and explore possible explanations for these changes. 
-Report by Biggons
+
+# Report by Biggons
 - Xavier Wright
 - Michael Arias
 - Matthew Arias
