@@ -63,7 +63,7 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 * Conduct **time series forecasting** (e.g., ARIMA, Prophet) to predict future violation trends.
 * Apply **causal inference methods** to test the effect of the Jan 5 intervention.
-* Explore **categorical breakdowns** of violations for deeper insights, deepers insights would include idenifying what exact types of vehicles(ie; trucks, passenger vehicles, etc)are causing the violations .
+* Explore **categorical breakdowns** of violations for deeper insights, deepers insights would include idenifying what exact types of vehicles(ie; trucks, passenger vehicles, etc)are causing the violations.
 
 ---
 
