@@ -2,7 +2,7 @@
 
 # 📊 Violation Trends Analysis — Datathon Project
 
-This repository was developed for the **MHC++ Datathon**, focusing on analyzing violation trends **before and after January 5, 2025**. Our objective was to investigate temporal patterns, identify significant shifts in violation frequency, and explore possible explanations for these changes. 
+Biggons intended on idenifying the correlation between the implementation of congestion pricing and ACE violatons within Manhattan's Central Business District.
 
 # Report by Biggons
 - Xavier Wright
@@ -46,7 +46,7 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 * **Long-term trend:** Violations grew steadily before 2023, with exponential growth in late 2024.
 * **Inflection point:** January 5, 2025 marks a turning point where violations stabilized at a high level and then sharply declined.
-* **Possible explanation:** This trend suggests the influence of **policy changes, enforcement measures, or systemic interventions** introduced in early 2025.
+* **Possible explanation:** The implementation of congestion pricing directly correlates to the decreasing ACE violation. Congestion pricing leads to less vehices being in the streets of lower Manhattan, leading for less possiblities of ACE violations to occur
 
 ---
 
@@ -63,14 +63,13 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 * Conduct **time series forecasting** (e.g., ARIMA, Prophet) to predict future violation trends.
 * Apply **causal inference methods** to test the effect of the Jan 5 intervention.
-* Explore **geographic or categorical breakdowns** of violations for deeper insights.
+* Explore **categorical breakdowns** of violations for deeper insights, deepers insights would include idenifying what exact types of vehicles(ie; trucks, passenger vehicles, etc)are causing the violations .
 
 ---
 
 ## 📌 Repository Structure
-
-* `data/` → Processed datasets (raw data excluded for privacy).
-* `figures/` → Exported plots (Pre-Jan 5th & Post-Jan 5th).
+* `environment.py` → Established the environments used in data processesing.
+* `Graphs/` → Exported plots (Pre-Jan 5th & Post-Jan 5th).
 * `README.md` → Project overview and findings.
 
 ---
