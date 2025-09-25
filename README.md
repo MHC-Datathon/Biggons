@@ -25,7 +25,7 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 ### 🔹 Violations Before January 5, 2025
 
-![Pre-Jan 5th](Pre-Jan%205th.png)
+![Pre-Jan 5th](Pre-Jan%5th.png)
 
 * Early years (2019–2022) show **relatively stable, low violation counts**.
 * From **2023 onward**, there is a gradual increase.
@@ -35,7 +35,7 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 ### 🔹 Violations After January 5, 2025
 
-![Post-Jan 5th](Post-Jan%205th.png)
+![Post-Jan 5th](Post-Jan%5th.png)
 
 * In the first half of 2025, violations remain high (**200K–250K monthly**).
 * By **August 2025**, there is a **sharp drop to \~50K**, indicating a significant shift in activity.
