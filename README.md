@@ -35,7 +35,7 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 ### 🔹 Violations After January 5, 2025
 
-![Post-Jan 5th]([Post-Jan%5th.png](https://github.com/MHC-Datathon/Biggons/blob/main/Graphs/Post-Jan%205th.png))
+![Post-Jan 5th](Graphs/Post-Jan-5th.png)
 
 * In the first half of 2025, violations remain high (**200K–250K monthly**).
 * By **August 2025**, there is a **sharp drop to \~50K**, indicating a significant shift in activity.
