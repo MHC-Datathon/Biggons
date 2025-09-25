@@ -25,7 +25,7 @@ The dataset consists of violation records spanning from **October 2019 through A
 
 ### 🔹 Violations Before January 5, 2025
 
-![Pre-Jan 5th]([Pre-Jan%5th.png](https://github.com/MHC-Datathon/Biggons/blob/main/Graphs/Pre-Jan%205th.png))
+![alt text]((https://github.com/MHC-Datathon/Biggons/blob/main/Graphs/Post-Jan%205th.png))
 
 * Early years (2019–2022) show **relatively stable, low violation counts**.
 * From **2023 onward**, there is a gradual increase.
